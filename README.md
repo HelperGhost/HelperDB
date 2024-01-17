@@ -1,2 +1,2 @@
 # HelperDB
-The core of database for the bot isnt working so I need to make a Library.
+A database for discord bots. And you can use it everywhere you want to use it.
