@@ -15,7 +15,7 @@ class Database:
         await self.db.close()
 
     async def execute(self, query, *args):
-        await self.db.execute(query, *args)
+        await self.db.execute(query, args)
         await self.db.commit()
 
     async def fetch(self, query, *args):
