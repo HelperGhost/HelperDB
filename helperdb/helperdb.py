@@ -19,9 +19,9 @@ class Database:
         await self.db.commit()
 
     async def fetch(self, query, *args):
-        cursor = await self.db.execute(query, *args)
+        cursor = await self.db.execute(query, args)
         return await cursor.fetchall()
     
     async def fetchone(self, query, *args):
-        cursor = await self.db.execute(query, *args)
+        cursor = await self.db.execute(query, args)
         return await cursor.fetchone()
